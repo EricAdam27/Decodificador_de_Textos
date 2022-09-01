@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+
 		<title>Decodificador</title>
 	</head>
 	<body>
-		
+		<header>
+			<img src="logoAlura.png" alt="Logo da Alura">
+		</header>
+		<main>
+			<section>
+				<textarea class="inputTexto" cols="40" rows="6" placeholder="Digite aqui..."></textarea>
+				<div>
+					<h6 class="informacao">&#128161; Apenas letras minúsculas e sem acento.</h6>
+				</div>
+				<div class="botoes">
+					<button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+					<button class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+				</div>
+			</section>
+
+			<section class="mensagemBox">
+				<textarea class="mensagem" cols="18" rows="8"></textarea>
+				<div id="divAparece">
+					<button class="copiar" onclick="btnCopiar()">Copiar</button>
+				</div>
+			</section>
+		</main>
+		<footer>&copy; Eric Adam Ferreira Santos - Alura</footer>
+		<script src="script.js"></script>
 	</body>
 </html>
